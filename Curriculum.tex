@@ -1,0 +1,151 @@
+\documentclass[letterpaper, 10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{marvosym} % Para ícones como telefone e email
+\usepackage{hyperref} % Para links clicáveis
+\usepackage{ragged2e} % Para controle de alinhamento
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem} % Para controlar espaçamento de listas
+
+% Define margens
+\geometry{
+  a4paper,
+  margin=1in,
+}
+
+% Remove números de página
+\pagestyle{empty}
+
+% Define o formato: Bold, Maiúsculas, e uma linha (regra horizontal) abaixo.
+\titleformat{\section}[runin]{\bfseries\Large\MakeUppercase}
+{\rule{\textwidth}{0.4pt}}{0pt}{}
+\titlespacing{\section}{0pt}{12pt}{6pt} % Espaçamento: Esquerda, Antes, Depois
+% A macro \titlerule pode ser muito sensível em alguns ambientes; usamos \rule.
+
+\titleformat{\section}{\bfseries\MakeUppercase}
+  {}{\rule{\textwidth}{0.4pt}}{} % Linha horizontal como separador
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Comando customizado para entradas de Educação e Experiência (texto esquerda, data/local direita)
+\newcommand{\resumeEntry}[4]{
+  \vspace{4pt}
+  \noindent\parbox[t]{0.7\linewidth}{\textbf{#1} \\ \emph{#2}}
+  \hfill
+  \parbox[t]{0.3\linewidth}{\raggedleft #3 \\ \emph{#4}}
+  \vspace{2pt}
+}
+
+% Comando customizado para entradas de Projeto (Título • Techs | Data)
+\newcommand{\projectEntry}[3]{
+  \vspace{4pt}
+  \noindent\textbf{#1} \quad \small{• \textit{#2}} \hfill \small{\textbf{#3}}
+  \vspace{1pt}
+}
+
+\begin{document}
+
+% --- CABEÇALHO ---
+\begin{center}
+    \LARGE \textbf{Mateus Lira Gomes} \\
+    \vspace{3pt}
+    \small
+    \Telefon \ +55 (61) 98133-2132 \ $|$ \ 
+    \href{https://github.com/mateuslg}{github.com/mateuslg} \ $|$ \ 
+    \href{https://linkedin.com/in/lgmateus}{linkedin.com/in/lgmateus} \ $|$ \ 
+    \Email \ mateuslira3105@gmail.com
+\end{center}
+
+% --------------------------------------------------------------------------------------------------
+\vspace{-2pt}
+\resumeEntry
+    {Universidade de Brasilia - FCTE}
+    {Bacharelado em Engenharia de Software}
+    {Março. 2024 -- Atualmente}
+    {4° Semestre}
+    {Brasília, DF.}
+
+\resumeEntry
+    {IESB}
+    {Bacharelado em Engenharia de Computação}
+    {Agosto. 2025 -- Atualmente}
+    {3° Semestre}
+    {Brasília, DF.}
+\vspace{6pt}
+
+% --------------------------------------------------------------------------------------------------
+% --------------------------------------------------------------------------------------------------
+\section*{EXPERIÊNCIA}
+\vspace{-2pt}
+\resumeEntry
+    {V2Tec Soluções}
+    {Desenvolvedor Júnior}
+    {Out. 2025 -- Atualmente}
+    {Brasília, DF - Hibrido}
+\vspace{-6pt}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Codifiquei aplicações, scripts e APIs de alta qualidade, aplicando boas práticas de desenvolvimento e princípios de segurança.
+    \item Realizo testes unitários e integrados para garantir a estabilidade e a qualidade contínua do código.
+    \item Integro sistemas com bancos de dados relacionais (\textbf{SQL}) e não relacionais (\textbf{NoSQL}), além de APIs externas (\textbf{REST/SOAP}).
+    \item Colaboro ativamente com equipes multidisciplinares (design, testes, infra) em um ambiente \textbf{Ágil} (Scrum/Kanban).
+    \item Utilizo \textbf{Git} para controle de versão e mantenho a documentação técnica dos processos e do código.
+\end{itemize}
+\vspace{10pt}
+
+\resumeEntry
+    {Academia Unique Athletic Resort}
+    {Auxiliar de Contas a Pagar}
+    {Jan. 2024 -- Nov. 2024}
+    {Brasília, DF - Presencial}
+\vspace{-6pt}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Responsável pelo processamento, lançamento e classificação de notas fiscais, boletos e faturas.
+    \item Controlei e agendei pagamentos a fornecedores, garantindo o cumprimento de prazos e evitando multas.
+    \item Realização de conciliação bancária diária/semanal, analisando extratos e identificando discrepâncias financeiras.
+    \item Organização e manutenção de arquivos digitais e físicos de documentos financeiros para fins de auditoria e controle.
+    \item Apoiei na elaboração de relatórios de fluxo de caixa e auxiliei nas rotinas de fechamento financeiro mensal.
+\end{itemize}
+
+% --------------------------------------------------------------------------------------------------
+% --------------------------------------------------------------------------------------------------
+\section*{PROJETOS}
+\vspace{-2pt}
+
+% Quantik AI
+\noindent\textbf{Quantik AI — API de Assistente Financeiro com IA}
+\vspace{5pt}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Desenvolvido em 2025 para permitir que analistas financeiros obtenham respostas precisas em linguagem natural, baseadas em documentos internos (Notas Fiscais, relatórios e leis).
+    \item Construído com uma arquitetura \textbf{RAG (Retrieval-Augmented Generation)} no \textbf{Google Cloud} (Cloud Run e Vertex AI) para otimizar custos e garantir escalabilidade.
+\end{itemize}
+\vspace{5pt}
+
+% LampIAo
+\noindent\textbf{LampIAo — Aplicação Web de Estruturação de Ideias com IA}
+\vspace{5pt}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Aplicação web que usa Inteligência Artificial para iluminar e estruturar ideias: o usuário anota um pensamento e recebe um título e *insights* gerados automaticamente.
+    \item Projeto realizado na matéria de Orientação a Objetos na Universidade de Brasília (UnB).
+\end{itemize}
+\vspace{5pt}
+
+% UnAjuda
+\noindent\textbf{UnAjuda — Plataforma Online de Q\&A para Universitários}
+\vspace{5pt}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Plataforma online onde universitários podem fazer perguntas e encontrar respostas sobre diversas matérias ou assuntos de nível superior.
+    \item Projeto realizado na matéria de Desenvolvimento de Software na Universidade de Brasília (UnB).
+\end{itemize}
+\vspace{5pt}
+
+% --------------------------------------------------------------------------------------------------
+\section*{HABILIDADES TÉCNICAS E CURSOS}
+\vspace{-2pt}
+\begin{itemize}[leftmargin=*, nosep, itemsep=2pt]
+    \item \textbf{Linguagens:} C, JavaScript, TypeScript, Python
+    \item \textbf{Web/Backend:} Flask, FastAPI, NodeJS, Django,
+    \item \textbf{Development Tools:} Git, Linux, Docker, Kubernetes, GoogleCloud, Shell 
+    \item \textbf{Cursos e Certificações:} \emph{Google Cloud Computing Foundations Certificate}
+\end{itemize}
+\end{document}
