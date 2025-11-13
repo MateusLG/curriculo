@@ -1,8 +1,6 @@
 # Mateus Lira Gomes
 
-Brasília, DF | +55 61 98133-2132 | mateuslira3105@gmail.com
-
-[LinkedIn](https://linkedin.com/in/lgmateus) | [GitHub](https://github.com/mateuslg)
+Brasília, DF | +55 61 98133-2132 | mateuslira3105@gmail.com | [LinkedIn](https://linkedin.com/in/lgmateus) | [GitHub](https://github.com/mateuslg)
 
 ---
 
@@ -42,14 +40,17 @@ Desenvolvedor de Software com experiência na criação de aplicações, scripts
 **Quantik AI — API de Assistente Financeiro com IA**
 - API que permite a analistas financeiros obterem respostas em linguagem natural baseadas em documentos internos.
 - Arquitetura RAG (Retrieval-Augmented Generation) na Google Cloud (Cloud Run, Vertex AI) para otimização de custos e escalabilidade.
+- https://github.com/MateusLG/QuantikAI
 
 **LampIAo — Aplicação Web de Estruturação de Ideias com IA**
 - Aplicação web que utiliza IA para gerar títulos e insights a partir de anotações do usuário, auxiliando na estruturação de ideias.
 - Projeto desenvolvido na disciplina de Orientação a Objetos na UnB.
+- https://github.com/MateusLG/LampIAo
 
 **UnAjuda — Plataforma Online de Q&A para Universitários**
 - Plataforma de perguntas e respostas para estudantes universitários, focada em matérias de nível superior.
 - Projeto desenvolvido na disciplina de Desenvolvimento de Software na UnB.
+- https://github.com/Semil-2006/UnAjuda
 
 ---
 
